@@ -3,9 +3,13 @@ def provjer_broja(broj):
         return f"Broj {broj} je unutar raspona."
     else:
         return f"Broj {broj} je izvan raspona."
+
+
 if __name__ == "__main__":
     try:
-        unesi_broj = int(input("Unesite broj: "))
-        print(provjer_broja(unesite_broj))
-    except ValueError:
+        prvi_broj = int(input("Unesite prvi broj: "))
+        print(provjer_broja(prvi_broj))
+        drugi_broj = int(input("Unesite drugi broj: "))
+        print(provjer_broja(drugi_broj))
+    except ValueError: 
         print("Unesena vrijednost nije broj.")
